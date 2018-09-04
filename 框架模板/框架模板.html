@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>框架模板 - 时间轴</title>
+    <link rel="stylesheet" href="css/screen.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+
+</head>
+<body>
+    <div class="container">
+        <h1>《图书马恩》</h1>
+        <p class="lead">马克思、恩格斯思想提出的时间线以及相关重大事件</p>
+
+        <h2>标题</h2>
+
+        <div class="timelineContainer" id="timelineContainer">
+            <div class="timelineToggle">
+                <p><a class="expandAll">+ 全部展开</a></p>
+            </div>
+            <br class="clear">
+
+            <div class="timelineMajor">
+                <h2 class="timelineMajorMarker"><span>1844年</span></h2>
+                <dl class="timelineMinor">
+                    <!-- 注意 dt、dl 的 id 之间的关系 -->
+                    <dt id="184401"><a>一月</a></dt>
+                    <dd class="timelineEvent" id="184401EX" style="display:none">
+                        <h3>马克思</h3>
+                        <p>asjdjksndkasdklaskdalskdalskdl;asd;lasl;dal;sd挥洒的结构化风格的双方各还打不过华东师范啊回复东莞市分公司杰克丹尼发给加拿大尽快发给你加快递费尽快给大家送咖啡更能接受都男方供电所覆盖高不喝酒的双方各健身房的框架撒娇打发士大夫枯竭LKDMKMNFJAN</p>
+                        <br class="clear">
+                    </dd>
+                </dl>
+
+                <dl class="timelineMinor">
+                        <!-- 注意 dt、dl 的 id 之间的关系 -->
+                        <dt id="184403"><a>三月</a></dt>
+                        <dd class="timelineEvent" id="184403EX" style="display:none">
+                            <h3>马克思</h3>
+                            <p>asjdjksndkasdklaskdalskdalskdl;asd;lasl;dal;sd挥洒的结构化风格的双方各还打不过华东师范啊回复东莞市分公司杰克丹尼发给加拿大尽快发给你加快递费尽快给大家送咖啡更能接受都男方供电所覆盖高不喝酒的双方各健身房的框架撒娇打发士大夫枯竭LKDMKMNFJAN</p>
+                            <br class="clear">
+                        </dd>
+                    </dl>
+            </div>
+
+            <div class="timelineMajor">
+                <h2 class="timelineMajorMarker"><span>1847年</span></h2>
+                <dl class="timelineMinor">
+                    <!-- 注意 dt、dl 的 id 之间的关系 -->
+                    <dt id="184402"><a>二月</a></dt>
+                    <dd class="timelineEvent" id="184402EX" style="display:none">
+                        <h3>马克思</h3>
+                        <p>asjdjksndkasdklaskdalskdalskdl;asd;lasl;dal;sd</p>
+                        <br class="clear">
+                    </dd>
+                </dl>
+            </div>
+
+            <br class="clear">
+        </div>
+    </div>
+
+    <!-- GLOBAL CORE SCRIPTS -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/colorbox.js"></script>
+    <script type="text/javascript" src="js/timeliner.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.timeliner({
+                startOpen:[]
+            });
+            $.timeliner({
+                timelineContainer: '#timelineContainer_2'
+            });
+            // Colorbox Modal
+            $(".CBmodal").colorbox({inline:true, initialWidth:100, maxWidth:682, initialHeight:100, transition:"elastic",speed:750});
+        });
+    </script>
+</body>
+</html>
